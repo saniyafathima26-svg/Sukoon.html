@@ -6,89 +6,89 @@
 <title>Sukoon</title>
 
 <style>
-  body{
-    margin:0;
-    height:100vh;
-    background: radial-gradient(circle at top, #141414, #000);
-    font-family:"Segoe UI", Arial, sans-serif;
-    color:#fff;
-    overflow:hidden;
-    position:relative;
-  }
+  body{
+    margin:0;
+    height:100vh;
+    background: radial-gradient(circle at top, #141414, #000);
+    font-family:"Segoe UI", Arial, sans-serif;
+    color:#fff;
+    overflow:hidden;
+    position:relative;
+  }
 
-  .card{
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    width:min(720px, 92vw);
-    padding:52px 34px;
-    border-radius:26px;
-    text-align:center;
-    background:rgba(255,255,255,0.06);
-    border:1px solid rgba(255,255,255,0.12);
-    backdrop-filter:blur(12px);
-    box-shadow:0 20px 60px rgba(0,0,0,0.65);
-    z-index:2;
-  }
+  .card{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:min(720px, 92vw);
+    padding:52px 34px;
+    border-radius:26px;
+    text-align:center;
+    background:rgba(255,255,255,0.06);
+    border:1px solid rgba(255,255,255,0.12);
+    backdrop-filter:blur(12px);
+    box-shadow:0 20px 60px rgba(0,0,0,0.65);
+    z-index:2;
+  }
 
-  h1,h2{ margin:0 0 26px; font-weight:800; }
-  p{ margin:8px 0; opacity:0.95; }
+  h1,h2{ margin:0 0 26px; font-weight:800; }
+  p{ margin:8px 0; opacity:0.95; }
 
-  .btn-row{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:22px;
-    margin-top:10px;
-    position:relative;
-    z-index:2;
-  }
+  .btn-row{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:22px;
+    margin-top:10px;
+    position:relative;
+    z-index:2;
+  }
 
-  .btn{
-    padding:16px 42px;
-    border:none;
-    border-radius:999px;
-    font-size:18px;
-    cursor:pointer;
-    user-select:none;
-    min-width:220px;
-    height:62px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    letter-spacing:.2px;
-    box-sizing:border-box;
-  }
+  .btn{
+    padding:16px 42px;
+    border:none;
+    border-radius:999px;
+    font-size:18px;
+    cursor:pointer;
+    user-select:none;
+    min-width:220px;
+    height:62px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    letter-spacing:.2px;
+    box-sizing:border-box;
+  }
 
-  .stable{
-    background:#fff;
-    color:#111;
-    box-shadow:0 10px 24px rgba(255,255,255,0.12);
-  }
+  .stable{
+    background:#fff;
+    color:#111;
+    box-shadow:0 10px 24px rgba(255,255,255,0.12);
+  }
 
-  /* moving button */
-  .moving{
-    position:absolute;
-    z-index:9999;
-    left:20px;  /* temporary safe default */
-    top:20px;
-  }
+  /* moving button */
+  .moving{
+    position:absolute;
+    z-index:9999;
+    left:20px;  /* temporary safe default */
+    top:20px;
+  }
 
-  .red{
-    background:linear-gradient(45deg,#ff2b2b,#ff6b6b);
-    color:#fff;
-    box-shadow:0 0 28px rgba(255,0,0,0.45);
-  }
+  .red{
+    background:linear-gradient(45deg,#FF2B2B,#FF6B6B);
+    color:#fff;
+    box-shadow:0 0 28px rgba(255,0,0,0.45);
+  }
 
-  .white{
-    background:#fff;
-    color:#111;
-    box-shadow:0 10px 24px rgba(255,255,255,0.12);
-  }
+  .white{
+    background:#fff;
+    color:#111;
+    box-shadow:0 10px 24px rgba(255,255,255,0.12);
+  }
 
-  .page{ display:none; }
-  .page.active{ display:block; }
+  .page{ display:none; }
+  .page.active{ display:block; }
 </style>
 </head>
 
@@ -97,159 +97,159 @@
 <button id="moveBtn" class="btn moving"></button>
 
 <div id="p1" class="page active">
-  <div class="card">
-    <h2>Do you really think you can find Sukoon without my bakbak?</h2>
-    <div class="btn-row">
-      <button id="s1" class="btn stable">NO</button>
-    </div>
-  </div>
+  <div class="card">
+    <h2>Do you really think you can find Sukoon without my bakbak?</h2>
+    <div class="btn-row">
+      <button id="s1" class="btn stable">NO</button>
+    </div>
+  </div>
 </div>
 
 <div id="p2" class="page">
-  <div class="card">
-    <h2>Are you angry with me?</h2>
-    <div class="btn-row">
-      <button id="s2" class="btn stable">NO</button>
-    </div>
-  </div>
+  <div class="card">
+    <h2>Are you angry with me?</h2>
+    <div class="btn-row">
+      <button id="s2" class="btn stable">NO</button>
+    </div>
+  </div>
 </div>
 
 <div id="p3" class="page">
-  <div class="card">
-    <h2>Do you think you listen to me?</h2>
-    <div class="btn-row">
-      <button id="s3" class="btn stable">YES</button>
-    </div>
-  </div>
+  <div class="card">
+    <h2>Do you love listening to me?</h2>
+    <div class="btn-row">
+      <button id="s3" class="btn stable">YES</button>
+    </div>
+  </div>
 </div>
 
 <div id="p4" class="page">
-  <div class="card">
-    <h2>Am I your favourite?</h2>
-    <div class="btn-row">
-      <button id="s4" class="btn stable">YES</button>
-    </div>
-  </div>
+  <div class="card">
+    <h2>Am I your favourite?</h2>
+    <div class="btn-row">
+      <button id="s4" class="btn stable">YES</button>
+    </div>
+  </div>
 </div>
 
 <div id="p5" class="page">
-  <div class="card">
-    <h2>Sani’s way or your way?</h2>
-    <div class="btn-row">
-      <button id="s5" class="btn stable">SANI’S WAY</button>
-    </div>
-  </div>
+  <div class="card">
+    <h2>Sani’s way or Fais way?</h2>
+    <div class="btn-row">
+      <button id="s5" class="btn stable">SANI’S WAY</button>
+    </div>
+  </div>
 </div>
 
 <div id="p6" class="page">
-  <div class="card">
-    <h2>Faisss, ab convince ho gaye ki mai aur bolun?</h2>
-    <div class="btn-row">
-      <button id="s6" class="btn stable">I SURRENDER</button>
-    </div>
-  </div>
+  <div class="card">
+    <h2>Faisss, app convince ho gaye ki mai aur bolun?</h2>
+    <div class="btn-row">
+      <button id="s6" class="btn stable">I SURRENDER</button>
+    </div>
+  </div>
 </div>
 
 <div id="p7" class="page">
-  <div class="card">
-    <h1>Sorry yaar…</h1>
-    <p>Maff kardallo 🥺</p>
+  <div class="card">
+    <h1>Sorry yaar…</h1>
+    <p>Maff kardallo </p>
 
-    <div style="margin-top:22px;">
-      <iframe width="100%" height="240"
-        src="https://www.youtube.com/embed/EatzcaVJRMs?autoplay=1"
-        allow="autoplay; encrypted-media"
-        frameborder="0"
-        allowfullscreen>
-      </iframe>
-    </div>
-  </div>
+    <div style="margin-top:22px;">
+      <iframe width="100%" height="240"
+        src="https://www.youtube.com/embed/EatzcaVJRMs?autoplay=1"
+        allow="autoplay; encrypted-media"
+        frameborder="0"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
 </div>
 
 <script>
-  const moveBtn = document.getElementById("moveBtn");
+  const moveBtn = document.getElementById("moveBtn");
 
-  const flow = [
-    { pageId:"p1", stableId:"s1", movingText:"YES",      movingColor:"red",   next:"p2" },
-    { pageId:"p2", stableId:"s2", movingText:"YES",      movingColor:"red",   next:"p3" },
-    { pageId:"p3", stableId:"s3", movingText:"NO",       movingColor:"white", next:"p4" },
-    { pageId:"p4", stableId:"s4", movingText:"NO",       movingColor:"white", next:"p5" },
-    { pageId:"p5", stableId:"s5", movingText:"YOUR WAY", movingColor:"red",   next:"p6" },
-    { pageId:"p6", stableId:"s6", movingText:"NEVER",    movingColor:"white", next:"p7" },
-    { pageId:"p7", stableId:null, movingText:"",         movingColor:"",      next:null }
-  ];
+  const flow = [
+    { pageId:"p1", stableId:"s1", movingText:"YES",      movingColor:"red",   next:"p2" },
+    { pageId:"p2", stableId:"s2", movingText:"YES",      movingColor:"red",   next:"p3" },
+    { pageId:"p3", stableId:"s3", movingText:"NO",       movingColor:"white", next:"p4" },
+    { pageId:"p4", stableId:"s4", movingText:"NO",       movingColor:"white", next:"p5" },
+    { pageId:"p5", stableId:"s5", movingText:"FAIS WAY", movingColor:"red",   next:"p6" },
+    { pageId:"p6", stableId:"s6", movingText:"NEVER",    movingColor:"white", next:"p7" },
+    { pageId:"p7", stableId:null, movingText:"",         movingColor:"",      next:null }
+  ];
 
-  let idx = 0;
+  let idx = 0;
 
-  function showPage(newIdx){
-    document.getElementById(flow[idx].pageId).classList.remove("active");
-    idx = newIdx;
-    document.getElementById(flow[idx].pageId).classList.add("active");
+  function showPage(newIdx){
+    document.getElementById(flow[idx].pageId).classList.remove("active");
+    idx = newIdx;
+    document.getElementById(flow[idx].pageId).classList.add("active");
 
-    if(flow[idx].pageId === "p7"){
-      moveBtn.style.display = "none";
-      return;
-    }
+    if(flow[idx].pageId === "p7"){
+      moveBtn.style.display = "none";
+      return;
+    }
 
-    moveBtn.style.display = "flex";
+    moveBtn.style.display = "flex";
 
-    // 1) set text + color FIRST (so it gets correct width)
-    moveBtn.textContent = flow[idx].movingText;
-    moveBtn.classList.remove("red","white");
-    moveBtn.classList.add(flow[idx].movingColor);
+    // 1) set text + color FIRST (so it gets correct width)
+    moveBtn.textContent = flow[idx].movingText;
+    moveBtn.classList.remove("red","white");
+    moveBtn.classList.add(flow[idx].movingColor);
 
-    // 2) place after layout (2 frames = reliable)
-    requestAnimationFrame(() => requestAnimationFrame(placeMovingPerfectly));
-  }
+    // 2) place after layout (2 frames = reliable)
+    requestAnimationFrame(() => requestAnimationFrame(placeMovingPerfectly));
+  }
 
-  function placeMovingPerfectly(){
-    const stable = document.getElementById(flow[idx].stableId);
-    if(!stable) return;
+  function placeMovingPerfectly(){
+    const stable = document.getElementById(flow[idx].stableId);
+    if(!stable) return;
 
-    const r = stable.getBoundingClientRect();
-    const gap = 22;
+    const r = stable.getBoundingClientRect();
+    const gap = 22;
 
-    let x = r.right + gap;
-    let y = r.top + (r.height/2) - (moveBtn.offsetHeight/2);
+    let x = r.right + gap;
+    let y = r.top + (r.height/2) - (moveBtn.offsetHeight/2);
 
-    const maxX = window.innerWidth - moveBtn.offsetWidth - 12;
-    const maxY = window.innerHeight - moveBtn.offsetHeight - 12;
-    x = Math.max(12, Math.min(x, maxX));
-    y = Math.max(12, Math.min(y, maxY));
+    const maxX = window.innerWidth - moveBtn.offsetWidth - 12;
+    const maxY = window.innerHeight - moveBtn.offsetHeight - 12;
+    x = Math.max(12, Math.min(x, maxX));
+    y = Math.max(12, Math.min(y, maxY));
 
-    moveBtn.style.left = x + "px";
-    moveBtn.style.top  = y + "px";
-  }
+    moveBtn.style.left = x + "px";
+    moveBtn.style.top  = y + "px";
+  }
 
-  // move ONLY when clicked/touched
-  function moveAway(){
-    const maxX = window.innerWidth - moveBtn.offsetWidth - 12;
-    const maxY = window.innerHeight - moveBtn.offsetHeight - 12;
-    moveBtn.style.left = (12 + Math.random() * (maxX - 12)) + "px";
-    moveBtn.style.top  = (12 + Math.random() * (maxY - 12)) + "px";
-  }
+  // move ONLY when clicked/touched
+  function moveAway(){
+    const maxX = window.innerWidth - moveBtn.offsetWidth - 12;
+    const maxY = window.innerHeight - moveBtn.offsetHeight - 12;
+    moveBtn.style.left = (12 + Math.random() * (maxX - 12)) + "px";
+    moveBtn.style.top  = (12 + Math.random() * (maxY - 12)) + "px";
+  }
 
-  moveBtn.addEventListener("pointerdown", (e) => {
-    e.preventDefault();
-    moveAway();
-  });
+  moveBtn.addEventListener("pointerdown", (e) => {
+    e.preventDefault();
+    moveAway();
+  });
 
-  // stable buttons go next page
-  flow.slice(0,6).forEach((step, i) => {
-    document.getElementById(step.stableId).addEventListener("click", () => showPage(i+1));
-  });
+  // stable buttons go next page
+  flow.slice(0,6).forEach((step, i) => {
+    document.getElementById(step.stableId).addEventListener("click", () => showPage(i+1));
+  });
 
-  window.addEventListener("load", () => {
-    // initialize properly
-    moveBtn.style.display = "flex";
-    moveBtn.textContent = flow[0].movingText;
-    moveBtn.classList.add(flow[0].movingColor);
-    requestAnimationFrame(() => requestAnimationFrame(placeMovingPerfectly));
-  });
+  window.addEventListener("load", () => {
+    // initialize properly
+    moveBtn.style.display = "flex";
+    moveBtn.textContent = flow[0].movingText;
+    moveBtn.classList.add(flow[0].movingColor);
+    requestAnimationFrame(() => requestAnimationFrame(placeMovingPerfectly));
+  });
 
-  window.addEventListener("resize", () => {
-    if(flow[idx].pageId !== "p7") placeMovingPerfectly();
-  });
+  window.addEventListener("resize", () => {
+    if(flow[idx].pageId !== "p7") placeMovingPerfectly();
+  });
 </script>
 
 </body>
